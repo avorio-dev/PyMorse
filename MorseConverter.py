@@ -25,7 +25,7 @@ class MorseConverter:
 
     # ---> CONSTRUCTOR
     def __init__(self):
-        with open("morse_alphabet.json", "r") as file:
+        with open("res/morse_alphabet.json", "r") as file:
             json_content = json.load(file)
 
             self._ddic_str_to_morse = json_content['morse_code']['str_to_morse']

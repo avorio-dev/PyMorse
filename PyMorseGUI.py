@@ -58,17 +58,17 @@ class MorseGUI:
         self._root.mainloop()
 
     def _load_icons(self):
-        icon_image = Image.open("res/play.png")
+        icon_image = Image.open("res/icons/play.png")
         icon_image = icon_image.resize((25, 25))
         self._icon_play = ImageTk.PhotoImage(icon_image)
         icon_image.close()
 
-        icon_image = Image.open("res/recycle_bin.png")
+        icon_image = Image.open("res/icons/recycle_bin.png")
         icon_image = icon_image.resize((25, 25))
         self._icon_recycle_bin = ImageTk.PhotoImage(icon_image)
         icon_image.close()
 
-        icon_image = Image.open("res/save.png")
+        icon_image = Image.open("res/icons/save.png")
         icon_image = icon_image.resize((25, 25))
         self._icon_save = ImageTk.PhotoImage(icon_image)
         icon_image.close()
